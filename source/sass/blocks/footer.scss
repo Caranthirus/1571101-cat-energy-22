@@ -1,0 +1,8 @@
+.footer__creator-link {
+  color: $special_dark-grey;
+  font-size: 16px;
+
+  &:active {
+    color: rgba($special_dark-grey, 0.5);
+  }
+}

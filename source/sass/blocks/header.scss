@@ -1,0 +1,37 @@
+.header__burger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__menu {
+  list-style: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.header__menu-link {
+  color: $dark_main;
+
+  &:hover {
+    color: rgba($dark_main, 0.5);
+  }
+
+  &:focus {
+    color: rgba($dark_main, 0.3);
+    outline: none;
+  }
+
+  &:active {
+    border-bottom: 2px solid $basic_green;
+    color: $dark_main;
+  }
+}
+
+.header__menu-item--current {
+  border-bottom: 2px solid $basic_green;
+}

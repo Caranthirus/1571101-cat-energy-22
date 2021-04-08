@@ -1,0 +1,82 @@
+.example {
+  background-color: $basic_grey;
+}
+
+.example__subtitle {
+  color: $special_dark-grey;
+}
+
+.example__progress-value {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark_main;
+  text-transform: uppercase;
+}
+
+.example__progress-text {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.progress__price span {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark_main;
+  text-transform: uppercase;
+}
+
+.example__button {
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.example__range {
+  appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    height: 6px;
+    width: 35px;
+    border-radius: 6px;
+    background: $basic_green;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: $basic_green-2;
+  }
+
+  &::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 14px;
+    cursor: pointer;
+    background: $background;
+    border-radius: 6px;
+    border: 1px solid $special_grey;
+    padding: 3px 6px;
+  }
+}

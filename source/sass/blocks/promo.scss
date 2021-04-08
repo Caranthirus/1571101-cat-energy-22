@@ -1,0 +1,24 @@
+.promo {
+  background-color: $basic_green;
+}
+
+.promo__title {
+  line-height: 36px;
+  color: $background;
+}
+
+.promo__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: $background;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 7px 44px;
+}
