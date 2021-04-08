@@ -1,5 +1,42 @@
 .example {
   background-color: $basic_grey;
+
+  @media (min-width: $tablet_width) {
+    background-color: $background;
+  }
+
+  @media (min-width: $dekstop_width) {
+    background-color: $basic_grey;
+  }
+}
+
+.example__progress {
+  @media (min-width: $tablet_width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $dekstop_width) {
+    flex-direction: column;
+  }
+}
+
+.example__progress-list {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet_width) {
+    margin-right: 42px;
+  }
+}
+
+.example__progress-item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet_width) {
+    margin-right: 42px;
+  }
 }
 
 .example__subtitle {
@@ -21,6 +58,17 @@
   line-height: 12px;
 }
 
+.progress__price {
+  @media (min-width: $tablet_width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet_width) {
+    flex-direction: row;
+  }
+}
+
 .progress__price span {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -29,6 +77,28 @@
   line-height: 20px;
   color: $dark_main;
   text-transform: uppercase;
+
+  @media (min-width: $tablet_width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: $tablet_width) {
+    margin-right: 63px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.example__buttons-block {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.example__progress-bar {
+  width: 100%;
 }
 
 .example__button {
@@ -54,6 +124,16 @@
     border-radius: 6px;
     background: $basic_green;
     cursor: pointer;
+
+    @media (min-width: $tablet_width) {
+      height: 17px;
+      width: 17px;
+      border: 6px solid $background;
+      border-radius: 50%;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      margin-top: -6px;
+      box-shadow: 0 0 0 1px $special_grey;
+    }
   }
 
   &:focus {
@@ -78,5 +158,11 @@
     border-radius: 6px;
     border: 1px solid $special_grey;
     padding: 3px 6px;
+
+    @media (min-width: $tablet_width) {
+      height: 6px;
+      padding: 0;
+      background: $range;
+    }
   }
 }

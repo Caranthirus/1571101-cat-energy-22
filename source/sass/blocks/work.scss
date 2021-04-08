@@ -1,3 +1,19 @@
+.work__list {
+  @media (min-width: $tablet_width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 150px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $dekstop_width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .work__text {
   color: $special_dark-grey;
 }

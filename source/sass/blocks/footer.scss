@@ -1,3 +1,24 @@
+.container--footer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet_width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 126px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 .footer__creator-link {
   color: $special_dark-grey;
   font-size: 16px;
