@@ -1,39 +1,60 @@
 .header__main {
   display: flex;
   justify-content: space-between;
-
-  @media (min-width: $tablet_width) {
-    justify-content: start;
-  }
-}
-
-.header__wrapper {
-  @media (min-width: $tablet_width) {
-    display: flex;
-    justify-content: space-between;
-  }
 }
 
 .header__burger {
   border: none;
   background-color: transparent;
   cursor: pointer;
-
-  @media (min-width: $tablet_width) {
-    display: none;
-  }
 }
 
 .header__menu {
-  list-style: none;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+}
 
-  @media (min-width: $tablet_width) {
+.header__menu-link {
+  color: $dark_main;
+
+  &:hover {
+    color: rgba($dark-main, 0.5);
+  }
+
+  &:focus {
+    color: rgba($dark-main, 0.3);
+    outline: none;
+  }
+
+  &:active {
+    border-bottom: 2px solid $basic-green;
+    color: $dark-main;
+  }
+}
+
+.header__menu-item--current {
+  border-bottom: 2px solid $basic-green;
+}
+
+@media (min-width: $tablet-width) {
+  .header__main {
+    justify-content: start;
+  }
+
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+  .header__menu {
     display: flex;
     justify-content: space-between;
     font-weight: 400;
@@ -41,48 +62,26 @@
     line-height: 24px;
   }
 
-  @media (min-width: $dekstop_width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.header__menu-item {
-  @media (min-width: $tablet_width) {
+  .header__menu-item {
     margin-right: 34px;
 
     &:last-child {
       margin-right: 0;
     }
   }
+}
 
-  @media (min-width: $dekstop_width) {
+@media (min-width: $dekstop-width) {
+  .header__menu {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .header__menu-item {
     margin-right: 36px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.header__menu-link {
-  color: $dark_main;
-
-  &:hover {
-    color: rgba($dark_main, 0.5);
-  }
-
-  &:focus {
-    color: rgba($dark_main, 0.3);
-    outline: none;
-  }
-
-  &:active {
-    border-bottom: 2px solid $basic_green;
-    color: $dark_main;
-  }
-}
-
-.header__menu-item--current {
-  border-bottom: 2px solid $basic_green;
 }

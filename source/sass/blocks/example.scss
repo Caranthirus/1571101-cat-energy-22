@@ -1,55 +1,28 @@
 .example {
-  background-color: $basic_grey;
-
-  @media (min-width: $tablet_width) {
-    background-color: $background;
-  }
-
-  @media (min-width: $dekstop_width) {
-    background-color: $basic_grey;
-  }
-}
-
-.example__progress {
-  @media (min-width: $tablet_width) {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $dekstop_width) {
-    flex-direction: column;
-  }
+  background-color: $basic-grey;
 }
 
 .example__progress-list {
   display: flex;
   justify-content: space-between;
-
-  @media (min-width: $tablet_width) {
-    margin-right: 42px;
-  }
 }
 
 .example__progress-item {
   display: flex;
   flex-direction: column;
-
-  @media (min-width: $tablet_width) {
-    margin-right: 42px;
-  }
 }
 
 .example__subtitle {
-  color: $special_dark-grey;
+  color: $special-dark-grey;
 }
 
 .example__progress-value {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: $dark_main;
+  color: $dark-main;
   text-transform: uppercase;
 }
 
@@ -58,37 +31,14 @@
   line-height: 12px;
 }
 
-.progress__price {
-  @media (min-width: $tablet_width) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media (min-width: $tablet_width) {
-    flex-direction: row;
-  }
-}
-
 .progress__price span {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: $dark_main;
+  color: $dark-main;
   text-transform: uppercase;
-
-  @media (min-width: $tablet_width) {
-    margin-left: auto;
-  }
-
-  @media (min-width: $tablet_width) {
-    margin-right: 63px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
 }
 
 .example__buttons-block {
@@ -108,61 +58,92 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   text-transform: uppercase;
 }
 
-.example__range {
-  appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 100%; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
+.example__track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  background: $background;
+  border-radius: 6px;
+  border: 1px solid $special-grey;
+  padding: 3px 6px;
+  position: relative;
+}
 
-  &::-webkit-slider-thumb {
-    appearance: none;
+.example__progress-togle {
+  height: 6px;
+  width: 35px;
+  border-radius: 6px;
+  background: $basic-green;
+  cursor: pointer;
+  position: absolute;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $background;
+  }
+
+  .example__progress {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__progress-list {
+    margin-right: 42px;
+  }
+
+  .example__progress-item {
+    margin-right: 42px;
+  }
+
+  .progress__price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .progress__price span {
+    margin-left: auto;
+  }
+
+  .example__track {
     height: 6px;
-    width: 35px;
-    border-radius: 6px;
-    background: $basic_green;
-    cursor: pointer;
-
-    @media (min-width: $tablet_width) {
-      height: 17px;
-      width: 17px;
-      border: 6px solid $background;
-      border-radius: 50%;
-      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
-      margin-top: -6px;
-      box-shadow: 0 0 0 1px $special_grey;
-    }
+    padding: 0;
+    background: $range;
   }
 
-  &:focus {
-    outline: $basic_green-2;
+  .example__progress-togle {
+    height: 17px;
+    width: 17px;
+    border: 6px solid $background;
+    border-radius: 50%;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    margin-top: -6px;
+    box-shadow: 0 0 0 1px $special-grey;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .example {
+    background-color: $basic-grey;
   }
 
-  &::-ms-track {
-    width: 100%;
-    cursor: pointer;
-
-    /* Hides the slider so custom styles can be added */
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
+  .example__progress {
+    flex-direction: column;
   }
 
-  &::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 14px;
-    cursor: pointer;
-    background: $background;
-    border-radius: 6px;
-    border: 1px solid $special_grey;
-    padding: 3px 6px;
+  .progress__price {
+    flex-direction: row;
+  }
 
-    @media (min-width: $tablet_width) {
-      height: 6px;
-      padding: 0;
-      background: $range;
+  .progress__price span {
+    margin-right: 63px;
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

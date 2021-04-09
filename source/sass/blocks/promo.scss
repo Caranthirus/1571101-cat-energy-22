@@ -1,5 +1,5 @@
 .promo {
-  background-color: $basic_green;
+  background-color: $basic-green;
   margin-bottom: 22px;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .promo__text {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -24,8 +24,10 @@
   padding: 7px 44px;
   display: flex;
   flex-grow: 1;
+}
 
-  @media (min-width: $tablet_width) {
+@media (min-width: $tablet-width) {
+  .promo__link {
     flex-grow: 0;
     max-width: 244px;
     font-size: 20px;
