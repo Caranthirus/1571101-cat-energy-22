@@ -1,5 +1,5 @@
 .example {
-  background-color: $basic-grey;
+  background-color: $section-background;
 }
 
 .example__progress-list {
@@ -13,7 +13,7 @@
 }
 
 .example__subtitle {
-  color: $special-dark-grey;
+  color: $article-font;
 }
 
 .example__progress-value {
@@ -29,6 +29,7 @@
 .example__progress-text {
   font-size: 12px;
   line-height: 12px;
+  color: $small-text;
 }
 
 .progress__price span {
@@ -68,7 +69,7 @@
   cursor: pointer;
   background: $background;
   border-radius: 6px;
-  border: 1px solid $special-grey;
+  border: 1px solid $range-color;
   padding: 3px 6px;
   position: relative;
 }
@@ -77,7 +78,7 @@
   height: 6px;
   width: 35px;
   border-radius: 6px;
-  background: $basic-green;
+  background: $button-color;
   cursor: pointer;
   position: absolute;
 }
@@ -122,13 +123,13 @@
     border-radius: 50%;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     margin-top: -6px;
-    box-shadow: 0 0 0 1px $special-grey;
+    box-shadow: 0 0 0 1px $range-color;
   }
 }
 
 @media (min-width: $dekstop-width) {
   .example {
-    background-color: $basic-grey;
+    background-color: $section-background;
   }
 
   .example__progress {

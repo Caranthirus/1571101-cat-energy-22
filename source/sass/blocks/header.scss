@@ -31,13 +31,13 @@
   }
 
   &:active {
-    border-bottom: 2px solid $basic-green;
+    border-bottom: 2px solid $button-color;
     color: $dark-main;
   }
 }
 
 .header__menu-item--current {
-  border-bottom: 2px solid $basic-green;
+  border-bottom: 2px solid $button-color;
 }
 
 @media (min-width: $tablet-width) {

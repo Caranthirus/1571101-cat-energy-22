@@ -11,11 +11,11 @@
 }
 
 .footer__creator-link {
-  color: $special-dark-grey;
+  color: $article-font;
   font-size: 16px;
 
   &:active {
-    color: rgba($special-dark-grey, 0.5);
+    color: rgba($article-font, 0.5);
   }
 }
 

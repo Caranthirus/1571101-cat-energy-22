@@ -1,5 +1,5 @@
 .programs__item {
-  background-color: $basic-grey;
+  background-color: $section-background;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -20,7 +20,7 @@
 }
 
 .programs__text {
-  color: $special-dark-grey;
+  color: $article-font;
 }
 
 .programs__link {
