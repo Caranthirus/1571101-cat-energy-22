@@ -1,5 +1,5 @@
 .button {
-  font-family: $oswald;
+  font-family: $primary-font;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -7,10 +7,10 @@
   color: $background;
   text-transform: uppercase;
   padding: 14px 26px;
-  background-color: $basic-green;
+  background-color: $primary-color;
 
   &:hover {
-    background-color: $button-hover;
+    background-color: $primary-color--dark;
   }
 
   &:active {
