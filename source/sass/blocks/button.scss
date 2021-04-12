@@ -1,13 +1,15 @@
 .button {
   font-family: $primary-font;
+  display: block;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
   color: $background;
   text-transform: uppercase;
-  padding: 14px 26px;
+  padding: 10px 0;
   background-color: $primary-color;
+  text-align: center;
 
   &:hover {
     background-color: $primary-color--dark;
@@ -16,4 +18,9 @@
   &:active {
     color: rgba($background, 0.5);
   }
+}
+
+.button--grey {
+  background-color: $secondary-color;
+  color: $article-font;
 }
