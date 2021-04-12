@@ -1,0 +1,150 @@
+.example {
+  background-color: $section-background;
+}
+
+.example__progress-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__progress-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.example__subtitle {
+  color: $article-font;
+}
+
+.example__progress-value {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $dark-main;
+  text-transform: uppercase;
+}
+
+.example__progress-text {
+  font-size: 12px;
+  line-height: 12px;
+  color: $small-text;
+}
+
+.progress__price span {
+  font-family: $oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-main;
+  text-transform: uppercase;
+}
+
+.example__buttons-block {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.example__progress-bar {
+  width: 100%;
+}
+
+.example__button {
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $oswald;
+  text-transform: uppercase;
+}
+
+.example__track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  background: $background;
+  border-radius: 6px;
+  border: 1px solid $range-color;
+  padding: 3px 6px;
+  position: relative;
+}
+
+.example__progress-togle {
+  height: 6px;
+  width: 35px;
+  border-radius: 6px;
+  background: $button-color;
+  cursor: pointer;
+  position: absolute;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background-color: $background;
+  }
+
+  .example__progress {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__progress-list {
+    margin-right: 42px;
+  }
+
+  .example__progress-item {
+    margin-right: 42px;
+  }
+
+  .progress__price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .progress__price span {
+    margin-left: auto;
+  }
+
+  .example__track {
+    height: 6px;
+    padding: 0;
+    background: $range;
+  }
+
+  .example__progress-togle {
+    height: 17px;
+    width: 17px;
+    border: 6px solid $background;
+    border-radius: 50%;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    margin-top: -6px;
+    box-shadow: 0 0 0 1px $range-color;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .example {
+    background-color: $section-background;
+  }
+
+  .example__progress {
+    flex-direction: column;
+  }
+
+  .progress__price {
+    flex-direction: row;
+  }
+
+  .progress__price span {
+    margin-right: 63px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

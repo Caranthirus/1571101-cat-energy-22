@@ -1,0 +1,27 @@
+.container--footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 126px;
+}
+
+.footer__creator-link {
+  color: $article-font;
+  font-size: 16px;
+
+  &:active {
+    color: rgba($article-font, 0.5);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container--footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
