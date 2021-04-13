@@ -10,6 +10,8 @@
   padding: 10px 0;
   background-color: $primary-color;
   text-align: center;
+  border: none;
+  outline: none;
 
   &:hover {
     background-color: $primary-color--dark;
