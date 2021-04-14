@@ -10,7 +10,7 @@
 }
 
 .header__menu {
-  font-family: $oswald;
+  font-family: $primary-font;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -19,25 +19,25 @@
 }
 
 .header__menu-link {
-  color: $dark_main;
+  color: $text;
 
   &:hover {
-    color: rgba($dark-main, 0.5);
+    color: rgba($text, 0.5);
   }
 
   &:focus {
-    color: rgba($dark-main, 0.3);
+    color: rgba($text, 0.3);
     outline: none;
   }
 
   &:active {
-    border-bottom: 2px solid $button-color;
-    color: $dark-main;
+    border-bottom: 2px solid $primary-color;
+    color: $text;
   }
 }
 
 .header__menu-item--current {
-  border-bottom: 2px solid $button-color;
+  border-bottom: 2px solid $primary-color;
 }
 
 @media (min-width: $tablet-width) {

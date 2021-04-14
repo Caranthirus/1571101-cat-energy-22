@@ -1,0 +1,54 @@
+.form-area label {
+  text-transform: uppercase;
+}
+
+.form-area__textfield {
+  text-transform: uppercase;
+  color: $article-font;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.form-area__title {
+  font-size: 24px;
+  line-height: 26px;
+  color: $text;
+  font-weight: normal;
+}
+
+.form-area__button {
+  width: 100%;
+  text-align: center;
+}
+
+.program-list__label {
+  color: $text-catalog;
+}
+
+@media (min-width: $tablet-width) {
+  .form-area label,
+  .form-area__textfield {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-area__button {
+    width: auto;
+  }
+
+  .form-area__info--submit {
+    display: flex;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .form-area__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-area__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}

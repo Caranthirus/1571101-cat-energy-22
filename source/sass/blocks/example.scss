@@ -1,5 +1,5 @@
 .example {
-  background-color: $section-background;
+  background-color: $secondary-color;
 }
 
 .example__progress-list {
@@ -17,12 +17,12 @@
 }
 
 .example__progress-value {
-  font-family: $oswald;
+  font-family: $primary-font;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: $dark-main;
+  color: $text;
   text-transform: uppercase;
 }
 
@@ -33,12 +33,12 @@
 }
 
 .progress__price span {
-  font-family: $oswald;
+  font-family: $primary-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: $dark-main;
+  color: $text;
   text-transform: uppercase;
 }
 
@@ -59,7 +59,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  font-family: $oswald;
+  font-family: $primary-font;
   text-transform: uppercase;
 }
 
@@ -78,7 +78,7 @@
   height: 6px;
   width: 35px;
   border-radius: 6px;
-  background: $button-color;
+  background: $primary-color;
   cursor: pointer;
   position: absolute;
 }
@@ -129,7 +129,7 @@
 
 @media (min-width: $dekstop-width) {
   .example {
-    background-color: $section-background;
+    background-color: $secondary-color;
   }
 
   .example__progress {
