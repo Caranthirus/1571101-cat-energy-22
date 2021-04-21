@@ -26,9 +26,11 @@
               <use xlink:href="img/icons/sprite.svg#logo_dekstop"></use>
             </svg>
           </a>
-          <svg class="header__title-logo" width="101" height="18">
-            <use xlink:href="img/icons/sprite.svg#title_logo"></use>
-          </svg>
+          <a class="header__title-logo" aria-label="Can Energy">
+            <svg width="101" height="18">
+              <use xlink:href="img/icons/sprite.svg#title_logo"></use>
+            </svg>
+          </a>
           <button class="header__burger" aria-label="Кнопка меню">
             <svg class="header__burger-icon header__burger-icon--open" width="24" height="16">
               <use xlink:href="img/icons/sprite.svg#burger"></use>
@@ -40,14 +42,20 @@
         </div>
         <nav class="header__nav header__nav--nojs header__nav--closed">
           <ul class="header__menu list-reset">
-            <li class="header__menu-item header__menu-item--current">
-              <a class="header__menu-link">Главная</a>
+            <li class="header__menu-item">
+              <a class="header__menu-link header__menu-link--current">
+                <span>Главная</span>
+              </a>
             </li>
             <li class="header__menu-item">
-              <a href="catalog.html" class="header__menu-link">Каталог продукции</a>
+              <a href="catalog.html" class="header__menu-link">
+                <span>Каталог продукции</span>
+              </a>
             </li>
             <li class="header__menu-item">
-              <a href="form.html" class="header__menu-link">Подбор программы</a>
+              <a href="form.html" class="header__menu-link">
+                <span>Подбор программы</span>
+              </a>
             </li>
           </ul>
         </nav>

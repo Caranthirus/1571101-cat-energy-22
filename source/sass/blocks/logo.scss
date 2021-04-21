@@ -3,10 +3,6 @@
   cursor: pointer;
 }
 
-.logo__header {
-  margin-right: 20px;
-}
-
 .logo:active {
   opacity: 0.5;
 }
@@ -23,6 +19,10 @@
 
   .logo__mobile {
     display: none;
+  }
+
+  .logo__header {
+    margin-right: 20px;
   }
 }
 

@@ -1,5 +1,5 @@
-  var nav = document.querySelector('.header__wrapper');
-  var burger = nav.querySelector('.header__burger');
+const nav = document.querySelector('.header__wrapper');
+const burger = nav.querySelector('.header__burger');
 
   nav.classList.remove('header__wrapper--nojs');
 
