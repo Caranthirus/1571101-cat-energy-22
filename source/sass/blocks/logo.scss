@@ -1,0 +1,37 @@
+.logo:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.logo:active {
+  opacity: 0.5;
+}
+
+.logo__tablet,
+.logo__dekstop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__tablet {
+    display: block;
+  }
+
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__header {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__dekstop {
+    display: block;
+  }
+}

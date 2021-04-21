@@ -15,4 +15,6 @@
   font-weight: normal;
   color: $article-font;
   background-color: $background;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
