@@ -126,6 +126,7 @@
   .header__wrapper {
     display: grid;
     grid-template-columns: 220px 1fr;
+    padding-top: 24px;
   }
 
   .header__title-logo {
@@ -162,6 +163,14 @@
 }
 
 @media (min-width: $dekstop-width) {
+  .header {
+    z-index: 100;
+  }
+
+  .header__wrapper {
+    padding-top: 53px;
+  }
+
   .header__menu {
     font-size: 20px;
     line-height: 30px;
@@ -172,6 +181,34 @@
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  .header__menu-link {
+    color: $background;
+    display: block;
+    padding: 22px 0;
+  }
+
+  .header__menu-link:active {
+    span::before {
+      background-color: $background;
+    }
+  }
+
+  .header__menu-link--current {
+    span::before {
+      background-color: $background;
+    }
+  }
+
+  .header__menu-item a[href] {
+    &:hover {
+      color: rgba($background, 0.5);
+    }
+
+    &:focus {
+      color: rgba($background, 0.3);
     }
   }
 }
