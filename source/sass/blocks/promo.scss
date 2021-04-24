@@ -104,7 +104,24 @@
 
 @media (min-width: $dekstop-width) {
   .promo {
-    padding: 150px 0 107px 0;
+    padding: 150px 0 55px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: calc(100% / 2 - 40px);
+      height: 100%;
+      background-color: $cat-background;
+      background-image: url("../../img/index-background-dekstop.jpg");
+      background-size: 720px auto;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      z-index: -1;
+    }
   }
 
   .promo__title {
