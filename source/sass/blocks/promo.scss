@@ -1,11 +1,31 @@
 .promo {
-  background-color: $primary-color;
+  background-color: $cat-background;
+  background-image: linear-gradient(to top, $background 175px, transparent 175px),
+    url("../../img/index-background-mobile.jpg");
   margin-bottom: 22px;
+  background-repeat: no-repeat;
+  background-position: center bottom, center bottom 175px;
+  padding-top: 26px;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, $background 175px, transparent 175px),
+      url("../../img/index-background-mobile@2x.jpg");
+    background-position: center bottom, center bottom 175px;
+    background-size: auto auto, 320px auto;
+  }
+}
+
+.promo__text-wrapper {
+  margin-bottom: 29px;
+  min-height: 111px;
 }
 
 .promo__title {
   line-height: 36px;
   color: $background;
+  margin: 0 0 25px 0;
+  text-align: center;
 }
 
 .promo__text {
@@ -16,22 +36,119 @@
   line-height: 14px;
   color: $background;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 29px 0;
+}
+
+.promo__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .promo__link {
   font-size: 14px;
   line-height: 18px;
-  padding: 7px 44px;
-  display: flex;
-  flex-grow: 1;
+  padding: 11px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 3px auto;
 }
 
 @media (min-width: $tablet-width) {
+  .promo {
+    background: none;
+    padding: 62px 0 526px 0;
+  }
+
+  .promo__text-wrapper {
+    padding-left: 87px;
+    margin: 0;
+  }
+
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $text;
+    margin: 0 0 41px 0;
+    text-align: left;
+    width: 415px;
+  }
+
+  .promo__text {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $text;
+    margin: 0 0 49px 0;
+  }
+
+  .promo__image {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    top: 260px;
+    right: 40px;
+    z-index: -1;
+  }
+
   .promo__link {
-    flex-grow: 0;
+    width: auto;
     max-width: 244px;
     font-size: 20px;
     line-height: 20px;
-    padding: 14px 26px;
+    padding: 17px 26px;
+    margin: 0 0 0 87px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .promo {
+    padding: 150px 0 55px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: calc(100% / 2);
+      height: 100%;
+      background-color: $cat-background;
+      background-image: url("../../img/index-background-dekstop.jpg");
+      background-size: 720px auto;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      z-index: -1;
+    }
+  }
+
+  .promo__title {
+    margin-top: 79px;
+  }
+
+  .promo__picture {
+    display: block;
+    grid-row: 1 / -1;
+    grid-column: 2 / -1;
+  }
+
+  .promo__container {
+    display: grid;
+    grid-template-columns: 510px 1fr;
+    grid-template-rows: max-content auto;
+    align-items: start;
+    column-gap: 30px;
+  }
+
+  .promo__image {
+    width: 552px;
+    height: 499px;
+    margin-left: -60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 }
