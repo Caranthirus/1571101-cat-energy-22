@@ -163,8 +163,24 @@
 }
 
 @media (min-width: $dekstop-width) {
-  .header {
-    z-index: 100;
+  .header--index {
+    position: relative;
+  }
+
+  .header--index::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: calc(100% / 2 - 40px);
+    height: 694px;
+    background-color: #5eaa2f;
+    background-image: url("../../img/index-background-dekstop.jpg");
+    background-size: 720px auto;
+    background-repeat: no-repeat;
+    background-position: right top;
+    z-index: -1;
   }
 
   .header__wrapper {

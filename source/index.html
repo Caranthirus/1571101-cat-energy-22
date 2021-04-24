@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header header--index">
     <div class="container">
       <div class="header__wrapper header__wrapper--nojs">
         <div class="header__main">
@@ -61,22 +61,22 @@
         </nav>
       </div>
     </div>
-  </header>
-  <main>
     <section class="promo">
-      <div class="container">
-        <div class="promo-wrapper">
+      <div class="container promo__container">
+        <div class="promo__text-wrapper">
         <h1 class="promo__title title">Функциональное питание для котов</h1>
         <p class="promo__text">Занялся собой? Займись котом!</p>
+      </div>
         <picture class="promo__picture">
           <source media="(min-width: 1440px)" srcset="img/promo-image_food__dekstop.png 1x">
-          <img  class="promo__image" src="img/promo-image_food.png"  srcset="img/promo-image_food@2x.png 2x" alt="Пример продукта" width="280" height="270">
+          <source media="(min-width: 768px)" srcset="img/promo-image_food__tablet.png">
+          <img  class="promo__image"  src="img/promo-image_food.png"  srcset="img/promo-image_food@2x.png 2x" alt="Пример продукта" width="280" height="270">
         </picture>
         <a href="form.html" class="promo__link button"> Подобрать программу</a>
       </div>
-      </div>
-      <div class="promo__picture-wrapper"></div>
     </section>
+  </header>
+  <main>
     <section class="programs">
       <h2 class="visually-hidden">Наши программы</h2>
       <div class="container .programs__container">
