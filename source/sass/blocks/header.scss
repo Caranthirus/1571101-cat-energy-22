@@ -97,7 +97,7 @@
     width: 100%;
     height: 2px;
     background-color: $primary-color;
-    bottom: -4px;
+    bottom: -10px;
     left: 0;
   }
 }
@@ -113,7 +113,7 @@
     width: 100%;
     height: 2px;
     background-color: $primary-color;
-    bottom: -4px;
+    bottom: -10px;
     left: 0;
   }
 }
@@ -174,13 +174,21 @@
     right: 0;
     bottom: 0;
     width: calc(100% / 2 - 40px);
-    height: 694px;
-    background-color: #5eaa2f;
+    height: 100%;
+    background-color: $cat-background;
     background-image: url("../../img/index-background-dekstop.jpg");
     background-size: 720px auto;
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: left top;
     z-index: -1;
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
   }
 
   .header__wrapper {
