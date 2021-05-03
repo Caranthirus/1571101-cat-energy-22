@@ -59,6 +59,7 @@
   .promo {
     background: none;
     padding: 62px 0 526px 0;
+    margin-bottom: 0;
   }
 
   .promo__text-wrapper {
@@ -106,6 +107,7 @@
   .promo {
     padding: 150px 0 55px 0;
     position: relative;
+    margin-bottom: 82px;
 
     &::before {
       content: "";
