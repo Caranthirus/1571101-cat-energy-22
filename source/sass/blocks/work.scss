@@ -1,3 +1,7 @@
+.work {
+  margin-bottom: 42px;
+}
+
 .work__title {
   margin: 0 0 38px 0;
 }
@@ -30,6 +34,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .work {
+    margin-bottom: 12px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $border-color;
+      bottom: 23px;
+      left: 0;
+    }
+  }
+
   .work__title {
     margin: 0 0 72px 0;
     font-size: 60px;
@@ -48,7 +67,7 @@
 
   .work__item {
     display: block;
-    margin-bottom: 134px;
+    margin-bottom: 154px;
     position: relative;
 
     &::after {
@@ -82,6 +101,14 @@
 }
 
 @media (min-width: $dekstop-width) {
+  .work {
+    margin-bottom: -95px;
+  }
+
+  .work::after {
+    display: none;
+  }
+
   .work__list {
     display: flex;
     justify-content: space-between;

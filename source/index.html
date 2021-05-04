@@ -157,8 +157,8 @@
       </div>
     </section>
     <section class="example">
-      <div class="container">
-        <div class="exampler__info">
+      <div class="container example__container">
+        <div class="example__Info">
           <h2 class="example__title title">Живой пример</h2>
           <p class="example__subtitle">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim.
@@ -166,43 +166,42 @@
             часов в день.</p>
           <div class="example__progress">
             <div class="example__progress-list">
-              <div class="example__progress-item example__progress-item--weight">
+              <p class="example__progress-item example__progress-item--weight">
                 <b class="example__progress-value">5 кг</b>
                 <small class="example__progress-text">снижение веса</small>
-              </div>
-              <div class="example__progress-item example__progress-item--days">
+              </p>
+              <p class="example__progress-item example__progress-item--days">
                 <b class="example__progress-value">60 дней</b>
                 <small class="example__progress-text">затрачено времени</small>
-              </div>
+              </p>
             </div>
             <div class="progress__price">
               <span>Затраты на питание:</span>
               <span>15 000 руб.</span>
             </div>
           </div>
-          <div class="example__evolution">
-            <div class="example__image-wrapper">
-              <div class="example__picture example__picture--before"></div>
-              <div class="example__picture example__picture--after"></div>
-            </div>
-            <div class="example__range">
-              <div class="example__buttons-block">
-                <button class="example__button example__button--before">Было</button>
-                <div class="example__progress-bar">
-                  <div class="example__track">
-                    <div class="example__progress-togle"></div>
-                  </div>
+        </div>
+        <div class="example__evolution">
+          <div class="example__image-wrapper">
+            <div class="example__picture example__picture--before example__picture--opened"></div>
+            <div class="example__picture example__picture--after"></div>
+          </div>
+          <div class="range">
+            <div class="buttons-block">
+              <button class="range__button range__button--before">Было</button>
+              <div class="progress-bar">
+                <div class="progress-bar__track">
+                  <div class="progress-bar__progress-togle"></div>
                 </div>
-                <button class="example__button example__button--after">Стало</button>
               </div>
+              <button class="range__button range__button--after">Стало</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="example__background"></div>
     </section>
     <section class="contacts">
-      <div class="container">
+      <div class="container contacts__container">
         <div class="contacts__inner">
           <h2 class="contacts__title title">Приглашаем к сотрудничеству дилеров!</h2>
           <div class="contacts__location">
@@ -211,8 +210,10 @@
           </div>
         </div>
       </div>
-      <div class="contacts__map">
-        <!-- Здесь будет карта! -->
+      <div class="contacts__map" id="map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab56dcb8dcee11b4f91de33322fc9d8cc7064153026f2e5c1246b7de8325e8c18&amp;source=constructor"
+          width="100%" height="100%" frameborder="0"></iframe>
       </div>
     </section>
   </main>
