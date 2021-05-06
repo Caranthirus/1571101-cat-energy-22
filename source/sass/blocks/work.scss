@@ -1,3 +1,7 @@
+.work {
+  margin-bottom: 42px;
+}
+
 .work__title {
   margin: 0 0 38px 0;
 }
@@ -30,6 +34,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .work {
+    margin-bottom: 0;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 5px;
+  }
+
   .work__title {
     margin: 0 0 72px 0;
     font-size: 60px;
@@ -41,6 +51,7 @@
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     column-gap: 95px;
+    row-gap: 37px;
     font-size: 16px;
     line-height: 24px;
     counter-reset: element;
@@ -48,8 +59,9 @@
 
   .work__item {
     display: block;
-    margin-bottom: 134px;
+    margin: 0;
     position: relative;
+    min-height: 280px;
 
     &::after {
       position: absolute;
@@ -82,8 +94,17 @@
 }
 
 @media (min-width: $dekstop-width) {
+  .work {
+    margin-bottom: 70px;
+    border: none;
+  }
+
   .work__list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .work__item {
+    min-height: auto;
   }
 }
