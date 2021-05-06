@@ -35,18 +35,9 @@
 
 @media (min-width: $tablet-width) {
   .work {
-    margin-bottom: 12px;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background-color: $border-color;
-      bottom: 23px;
-      left: 0;
-    }
+    margin-bottom: 0;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 5px;
   }
 
   .work__title {
@@ -60,6 +51,7 @@
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     column-gap: 95px;
+    row-gap: 37px;
     font-size: 16px;
     line-height: 24px;
     counter-reset: element;
@@ -67,8 +59,9 @@
 
   .work__item {
     display: block;
-    margin-bottom: 154px;
+    margin: 0;
     position: relative;
+    min-height: 280px;
 
     &::after {
       position: absolute;
@@ -102,15 +95,16 @@
 
 @media (min-width: $dekstop-width) {
   .work {
-    margin-bottom: -95px;
-  }
-
-  .work::after {
-    display: none;
+    margin-bottom: 70px;
+    border: none;
   }
 
   .work__list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .work__item {
+    min-height: auto;
   }
 }
