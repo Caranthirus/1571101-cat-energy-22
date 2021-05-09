@@ -1,7 +1,74 @@
+.additional-list__item {
+  margin-bottom: 25px;
+  padding-left: 44px;
+}
+
+.additional-list__input + .program-list__label::before {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  content: "";
+  border: 1px solid $range-color;
+  left: -44px;
+  top: -4px;
+}
+
+.additional-list__input:checked + .program-list__label::after {
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  content: "";
+  background: url("../../img/icons/check.svg") no-repeat 0 0;
+  left: -37px;
+  top: 3px;
+}
+
+.additional-list__input:not(:disabled) + .program-list__label:hover::before {
+  border: 1px solid $hover-form;
+}
+
+.additional-list__input:disabled + .program-list__label {
+  opacity: 0.3;
+}
+
+.additional-list__input:disabled + .program-list__label::before {
+  border: 1px solid $hover-form;
+}
+
+.program-list__input:checked + .program-list__label::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: $primary-color;
+  top: 5px;
+  left: -37px;
+  border-radius: 50%;
+}
+
 @media (min-width: $tablet-width) {
   .additional-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 124px;
+  }
+
+  .additional-list__item {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding-left: 59px;
+  }
+
+  .additional-list__input + .program-list__label::before {
+    width: 40px;
+    height: 40px;
+    left: -58px;
+  }
+
+  .additional-list__input:checked + .program-list__label::after {
+    left: -46px;
+    top: 8px;
   }
 }
 

@@ -1,0 +1,70 @@
+.program-list__item {
+  line-height: 18px;
+  margin-bottom: 25px;
+  padding-left: 45px;
+}
+
+.program-list__label {
+  position: relative;
+  cursor: pointer;
+  color: $text-catalog;
+}
+
+.program-list__input + .program-list__label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid $range-color;
+  border-radius: 50%;
+  top: -3px;
+  left: -45px;
+}
+
+.program-list__input:not(:disabled) + .program-list__label:hover::before {
+  border: 1px solid $hover-form;
+}
+
+.program-list__input:disabled + .program-list__label {
+  opacity: 0.3;
+}
+
+.program-list__input:disabled + .program-list__label::before {
+  border: 1px solid $hover-form;
+}
+
+.program-list__input:checked + .program-list__label::after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: $primary-color;
+  top: 5px;
+  left: -37px;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .program-list__item {
+    padding: 0;
+  }
+
+  .program-list__input + .program-list__label::before {
+    width: 40px;
+    height: 40px;
+    top: -6px;
+    left: -59px;
+  }
+
+  .program-list__input:checked + .program-list__label::after {
+    width: 18px;
+    height: 18px;
+    left: -48px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .program-list__item:last-child {
+    margin-bottom: 0;
+  }
+}

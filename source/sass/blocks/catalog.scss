@@ -1,16 +1,133 @@
+.catalog__title {
+  margin: 0;
+  padding: 27px 0 41px 0;
+  line-height: 36px;
+}
+
+.catalog__item {
+  margin-top: 10px;
+}
+
+.catalog__footer {
+  margin: 30px -20px 0 -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 25px 20px;
+  border-bottom: 1px solid $border-footer;
+}
+
+.catalog__footer-icon--tablet {
+  display: none;
+}
+
+.catalog__button {
+  align-self: stretch;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $special-grey-2;
+  }
+
+  &:active {
+    background-color: $special-grey-2;
+    color: rgba($article-font, 0.3);
+  }
+}
+
+.catalog__subtitle {
+  text-transform: uppercase;
+  color: $text-dark;
+  font-family: $primary-font;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 24px 0 10px 0;
+}
+
+.catalog__subtext {
+  font-size: 12px;
+  line-height: 16px;
+  color: $article-font;
+  margin: 0 0 19px 0;
+}
+
 @media (min-width: $tablet-width) {
+  .catalog {
+    margin-top: 54px;
+  }
+
+  .catalog__title {
+    margin: 0 0 83px 0;
+    padding: 0;
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .catalog__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 52px;
   }
 
   .catalog__subtitle {
     font-size: 20px;
     line-height: 22px;
+    margin: 49px 0 23px 0;
+    max-width: 134px;
+    text-align: center;
   }
 
   .catalog__subtext {
     font-size: 16px;
+    line-height: 18px;
+    max-width: 167px;
+    text-align: center;
+  }
+
+  .catalog__button {
+    margin-top: auto;
+  }
+
+  .catalog__footer {
+    padding: 147px 38px 38px 38px;
+    margin: 0;
+    border: none;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: calc(100% - 83px);
+      bottom: 0;
+      left: 0;
+      border: 2px solid $secondary-color;
+      z-index: -2;
+    }
+  }
+
+  .catalog__footer-icon--tablet {
+    display: block;
+  }
+
+  .catalog__footer-icon--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .catalog {
+    margin-top: 62px;
+  }
+
+  .catalog__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }

@@ -340,7 +340,7 @@
     height: calc(100% - 206px);
     bottom: 0;
     left: 0;
-    background-color: $secondary-color;
+    background: linear-gradient(to right, $secondary-color 0%, $secondary-color 80%, $cat-background--example 80%, $cat-background--example 100%);
     z-index: -2;
   }
 
@@ -375,10 +375,18 @@
   .example__evolution {
     margin-top: 0;
     margin-left: auto;
-  }
+    position: relative;
 
-  .example__evolution::after {
-    display: none;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 305px;
+      height: calc(100% - 128px);
+      top: 203px;
+      left: 323px;
+      z-index: -1;
+      background-color: $cat-background--example;
+    }
   }
 
   .range {
