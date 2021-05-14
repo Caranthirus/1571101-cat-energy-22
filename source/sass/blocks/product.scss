@@ -1,12 +1,6 @@
 .product {
   padding: 0 20px 22px 20px;
   border-bottom: 1px solid $border-footer;
-  margin-right: -20px;
-  margin-left: -20px;
-
-  &:first-child {
-    border-top: 1px solid $border-footer;
-  }
 }
 
 .product__wrapper {
@@ -32,7 +26,7 @@
   text-transform: uppercase;
   color: $text-catalog;
   margin: 0 0 10px 0;
-  max-width: 76px;
+  max-width: calc(100% - 64px);
 }
 
 .product__property-cell {
@@ -111,6 +105,10 @@
     font-size: 16px;
     border-bottom: 1px solid $range-color;
     padding: 7px 0 9px 0;
+  }
+
+  .product__button {
+    margin-top: auto;
   }
 }
 

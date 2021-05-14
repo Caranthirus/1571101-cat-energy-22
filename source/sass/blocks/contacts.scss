@@ -43,6 +43,12 @@
   height: 362px;
 }
 
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__inner {
     padding: 68px 41px 58px 41px;

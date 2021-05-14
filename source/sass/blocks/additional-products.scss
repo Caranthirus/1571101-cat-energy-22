@@ -1,16 +1,5 @@
 .additional-products {
   margin-top: 23px;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 53px;
-    height: 2px;
-    background-color: $primary-color;
-    top: 16px;
-    right: 0;
-  }
 }
 
 .additional-products__title {
@@ -21,8 +10,21 @@
   line-height: 24px;
   margin: 0 0 36px 0;
   color: $text;
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  position: relative;
+  padding-right: 22px;
+  background-color: $background;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: 2px;
+    background-color: $primary-color;
+    top: 0;
+    margin-top: calc(1em / 2 + 3px);
+    z-index: -1;
+  }
 }
 
 .add-products {
@@ -64,6 +66,12 @@
   background-repeat: no-repeat;
   background-position: center top;
   margin: 36px auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/cat-catalog_background@2x.jpg");
+    background-position: center top;
+    background-size: 280px auto;
+  }
 }
 
 .additional-products__gift-text {
@@ -74,31 +82,25 @@
 @media (min-width: $tablet-width) {
   .additional-products {
     margin-top: 69px;
-
-    &::after {
-      top: 21px;
-      width: 100%;
-      z-index: -1;
-    }
   }
 
   .additional-products__title {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 36px;
+    padding: 0 36px;
     max-width: 410px;
-    background-color: $background;
     margin-bottom: 81px;
-    position: relative;
 
     &::after {
       position: absolute;
       content: "";
-      width: 30px;
-      left: -30px;
+      width: 100vw;
+      height: 2px;
+      background-color: $primary-color;
       top: 0;
-      background-color: $background;
-      height: 100%;
+      right: 100%;
+      margin-top: calc(1em / 2 + 3px);
+      z-index: -1;
     }
   }
 
@@ -145,6 +147,11 @@
     background-repeat: no-repeat;
     background-position: top center;
     padding: 57px 0 60px 78px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat-catalog_background--tablet@2x.png");
+      background-size: 708px auto;
+    }
   }
 
   .additional-products__gift-text {
@@ -159,8 +166,12 @@
   }
 
   .additional-products__title {
-    padding-left: 0;
-    max-width: 372px;
+    padding: 0 36px 0 0;
+    max-width: 374px;
+
+    &::after {
+      margin-right: 36px;
+    }
   }
 
   .additional-products__catalog {
@@ -194,6 +205,11 @@
     margin: 0;
     padding: 62px 42px 42px 42px;
     background-image: url("../../img/cat-catalog_background--dekstop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/cat-catalog_background--dekstop@2x.png");
+      background-size: 245px auto;
+    }
   }
 
   .additional-products__gift-text {

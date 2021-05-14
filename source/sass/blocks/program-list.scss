@@ -21,7 +21,8 @@
   left: -45px;
 }
 
-.program-list__input:not(:disabled) + .program-list__label:hover::before {
+.program-list__input:not(:disabled) + .program-list__label:hover::before,
+.program-list__input:not(:disabled):focus + .program-list__label::before {
   border: 1px solid $hover-form;
 }
 
@@ -46,7 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .program-list__item {
-    padding: 0;
+    padding: 0 0 0 62px;
   }
 
   .program-list__input + .program-list__label::before {

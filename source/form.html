@@ -10,7 +10,7 @@
   <link rel="icon" href="img/fav.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="image/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -66,9 +66,9 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="page__main">
     <section class="program-selection">
-      <div class="container">
+      <div class="container container--form">
         <h1 class="program-selection__title title">Подбор программы</h1>
         <p class="program-selection__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" class="program-selection__form  form-area">
@@ -76,12 +76,11 @@
             <fieldset class="form-area__info form-area__info--personal">
               <div class="form-control">
                 <label for="catname" class="form-area__label">имя:*</label>
-                <input type="text" class="form-area__textfield" id="catname" name="catname" placeholder="Барсик"
-                  required>
+                <input type="text" class="form-area__textfield" id="catname" name="catname" placeholder="Барсик">
               </div>
               <div class="form-control">
                 <label for="weight" class="form-area__label">вес (кг):*</label>
-                <input type="number" class="form-area__textfield" id="weight" name="weight" placeholder="7" required>
+                <input type="number" class="form-area__textfield" id="weight" name="weight" placeholder="7">
               </div>
               <div class="form-control">
                 <label for="age" class="form-area__label">Возраст (лет):</label>
@@ -114,8 +113,7 @@
             <div class="form-area__inner">
               <div class="form-control">
                 <label for="mail" class="form-area__label">E-mail:*</label>
-                <input type="email" class="form-area__textfield" id="mail" name="mail" placeholder="kuklachev@gmail.com"
-                  required>
+                <input type="email" class="form-area__textfield" id="mail" name="mail" placeholder="kuklachev@gmail.com">
                 <div class="form-area__pic">
                   <svg class="form-area__icon form-area__icon--mail" width="19" height="14">
                     <use xlink:href="img/icons/sprite.svg#mail"></use>
@@ -124,8 +122,7 @@
               </div>
               <div class="form-control">
                 <label for="tel" class="form-area__label">Телефон:*</label>
-                <input type="tel" class="form-area__textfield" id="tel" name="tel" placeholder="8 (960) 900-60-90"
-                  required>
+                <input type="tel" class="form-area__textfield" id="tel" name="tel" placeholder="8 (960) 900-60-90">
                 <div class="form-area__pic">
                   <svg class="form-area__icon form-area__icon--phone" width="20" height="21">
                     <use xlink:href="img/icons/sprite.svg#phone"></use>
@@ -185,7 +182,7 @@
       <div class="contacts__map" id="map">
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab56dcb8dcee11b4f91de33322fc9d8cc7064153026f2e5c1246b7de8325e8c18&amp;source=constructor"
-          width="100%" height="100%" frameborder="0"></iframe>
+          width="320" height="362"></iframe>
       </div>
     </section>
   </main>
@@ -243,7 +240,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

@@ -23,7 +23,8 @@
   top: 3px;
 }
 
-.additional-list__input:not(:disabled) + .program-list__label:hover::before {
+.additional-list__input:not(:disabled) + .program-list__label:hover::before,
+.additional-list__input:not(:disabled):focus + .program-list__label::before {
   border: 1px solid $hover-form;
 }
 

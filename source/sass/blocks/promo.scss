@@ -5,7 +5,7 @@
   margin-bottom: 22px;
   background-repeat: no-repeat;
   background-position: center bottom, center bottom 175px;
-  padding-top: 26px;
+  padding-top: 90px;
   position: relative;
 
   @media (min-resolution: 2dppx) {
@@ -123,6 +123,11 @@
       background-repeat: no-repeat;
       background-position: right bottom;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/index-background-dekstop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
   }
 
