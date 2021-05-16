@@ -116,6 +116,8 @@
     justify-content: space-between;
     padding: 24px 38px 28px 37px;
     border: 1px solid $range-color;
+    max-width: 1000px;
+    margin: 0 auto;
 
     &:not(:first-child) {
       border-top: none;
@@ -141,7 +143,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     column-gap: 58px;
-    margin: 69px 0 76px 0;
+    margin: 69px auto 76px auto;
     max-width: 708px;
     background-image: url("../../img/cat-catalog_background--tablet.png");
     background-repeat: no-repeat;
@@ -188,6 +190,7 @@
     grid-template-columns: 1fr 329px 1fr;
     column-gap: 38px;
     align-items: center;
+    max-width: auto;
   }
 
   .add-products__title {
