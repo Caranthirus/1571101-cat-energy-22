@@ -18,3 +18,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
+
+.page__main {
+  overflow-x: hidden;
+}

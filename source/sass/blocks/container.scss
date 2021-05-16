@@ -2,8 +2,20 @@
   padding: 0 20px;
   margin: 0 auto;
   max-width: 1280px;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .container--form {
+    padding-left: 67px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .container--form {
     padding: 0 30px;
   }
 }

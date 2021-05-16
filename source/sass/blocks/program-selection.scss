@@ -3,15 +3,47 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  padding-top: 93px;
+}
+
+.program-selection__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0 0 37px 0;
 }
 
 .program-selection__subtitle {
   color: $text;
+  margin: 0 0 39px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  max-width: 226px;
 }
 
 @media (min-width: $tablet-width) {
+  .program-selection {
+    margin-top: 50px;
+    padding-top: 0;
+  }
+
+  .program-selection__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 55px;
+  }
+
   .program-selection__subtitle {
     font-size: 20px;
     line-height: 30px;
+    max-width: 323px;
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .program-selection {
+    margin-top: 61px;
   }
 }

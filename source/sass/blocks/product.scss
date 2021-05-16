@@ -1,7 +1,20 @@
+.product {
+  padding: 0 20px 22px 20px;
+  border-bottom: 1px solid $border-footer;
+}
+
 .product__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  grid-template-columns: 140px 1fr;
+  margin-bottom: 13px;
+  padding-top: 10px;
+}
+
+.product__picture {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding-top: 5px;
 }
 
 .product__title {
@@ -12,6 +25,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $text-catalog;
+  margin: 0 0 10px 0;
+  max-width: calc(100% - 64px);
 }
 
 .product__property-cell {
@@ -20,32 +35,93 @@
   color: $article-font;
 }
 
+.product__property-cell--value {
+  text-align: right;
+}
+
 .product__property {
   width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 8px;
 }
 
 @media (min-width: $tablet-width) {
   .product {
-    margin-right: 60px;
+    margin: 0;
+    padding: 0 38px 40px 38px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: calc(100% - 83px);
+      bottom: 0;
+      left: 0;
+      background-color: $secondary-color;
+      z-index: -1;
+    }
+
+    &:first-child {
+      border-top: none;
+    }
   }
 
   .product__wrapper {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .product__picture {
+    padding: 0;
+    min-height: 206px;
+    align-items: flex-end;
+  }
+
+  .product__image {
+    max-width: 100%;
+    width: auto;
+    max-height: 206px;
   }
 
   .product__title {
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
+    max-width: 159px;
+    margin: 0 auto 13px auto;
+  }
+
+  .product__description {
+    margin-top: 28px;
   }
 
   .product__property-cell {
     font-size: 16px;
+    border-bottom: 1px solid $range-color;
+    padding: 7px 0 9px 0;
+  }
+
+  .product__button {
+    margin-top: auto;
   }
 }
 
 @media (min-width: $dekstop-width) {
+  .product {
+    padding-left: 40px;
+  }
+
   .product__title {
     line-height: 21px;
+  }
+
+  .product__image {
+    padding-bottom: 13px;
   }
 }
