@@ -27,7 +27,6 @@
 .header__burger {
   border: none;
   background-color: transparent;
-
   cursor: pointer;
 }
 
@@ -50,21 +49,21 @@
 
   .header__nav {
     display: block;
-    position: static;
   }
 }
 
-.header__wrapper--nojs {
-  .header__burger-icon--close {
-    display: block;
-  }
+.header--nojs {
+  position: relative;
+}
 
-  .header__burger-icon--open {
+.header__wrapper--nojs {
+  .header__burger-icon {
     display: none;
   }
 
   .header__nav {
     display: block;
+    position: static;
   }
 }
 

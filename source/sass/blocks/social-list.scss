@@ -1,15 +1,3 @@
-.soical-list__icon-vk,
-.soical-list__icon-inst,
-.soical-list__icon-fcb {
-  display: none;
-}
-
-.soical-list__icon-inst--mobile,
-.social-list__icon-vk--mobile,
-.soical-list__icon-fcb--mobile {
-  display: block;
-}
-
 .social-list__item {
   margin-right: 34px;
 
@@ -21,12 +9,14 @@
 .social-list__link {
   color: $dark-grey;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $primary-color;
+    outline: none;
   }
 
   &:active {
-    .soical-list__icon {
+    .social-list__icon {
       opacity: 0.5;
     }
   }
@@ -41,15 +31,18 @@
     }
   }
 
-  .soical-list__icon-vk,
-  .soical-list__icon-inst,
-  .soical-list__icon-fcb {
-    display: block;
+  .social-list__icon-vk {
+    width: 30px;
+    height: 32px;
   }
 
-  .social-list__icon-vk--mobile,
-  .soical-list__icon-inst--mobile,
-  .soical-list__icon-fcb--mobile {
-    display: none;
+  .social-list__icon-inst {
+    width: 20px;
+    height: 23px;
+  }
+
+  .social-list__icon-fcb {
+    width: 28px;
+    height: 33px;
   }
 }

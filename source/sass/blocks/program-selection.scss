@@ -6,6 +6,10 @@
   padding-top: 93px;
 }
 
+.program-selection--nojs {
+  padding-top: 27px;
+}
+
 .program-selection__title {
   font-size: 36px;
   line-height: 36px;
@@ -25,6 +29,10 @@
 @media (min-width: $tablet-width) {
   .program-selection {
     margin-top: 50px;
+    padding-top: 0;
+  }
+
+  .program-selection--nojs {
     padding-top: 0;
   }
 

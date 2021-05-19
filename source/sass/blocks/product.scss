@@ -13,7 +13,7 @@
 .product__picture {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-self: end;
   padding-top: 5px;
 }
 
@@ -81,6 +81,7 @@
     padding: 0;
     min-height: 206px;
     align-items: flex-end;
+    align-self: center;
   }
 
   .product__image {
@@ -121,7 +122,11 @@
     line-height: 21px;
   }
 
+  .product__description {
+    margin-top: 36px;
+  }
+
   .product__image {
-    padding-bottom: 13px;
+    padding-bottom: 7px;
   }
 }

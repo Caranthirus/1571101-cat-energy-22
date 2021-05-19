@@ -154,12 +154,12 @@
     margin: 70px 0 0 0;
     padding: 30px 0 0 28px;
     border: 1px solid $border-form;
-    border-bottom: none;
   }
 
   .form-area label {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 20px;
   }
 
   .form-area__textfield {
@@ -210,7 +210,7 @@
   }
 
   .form-area__info--comment {
-    margin-top: 42px;
+    margin-top: 23px;
   }
 
   .form-area__head {
@@ -238,6 +238,7 @@
   .form-area__info--submit {
     display: grid;
     grid-template-columns: 282px 1fr;
+    column-gap: 64px;
     align-items: center;
     margin-bottom: 66px;
   }
@@ -245,6 +246,7 @@
   .form-area__required {
     margin: 0;
     font-size: 16px;
+    text-align: left;
   }
 }
 
@@ -268,6 +270,7 @@
   .form-area__info--submit {
     grid-template-columns: 568px 1fr;
     column-gap: 80px;
+    margin: 29px 0 77px;
   }
 
   .form-area__required {
@@ -287,6 +290,10 @@
   }
 
   .form-area__info--contacts {
-    margin-top: 32px;
+    margin-top: 44px;
+  }
+
+  .form-area__info--comment {
+    margin-top: 4px;
   }
 }
