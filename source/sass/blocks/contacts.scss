@@ -1,4 +1,4 @@
-.contacts__container {
+.contacts {
   position: relative;
 }
 
@@ -11,6 +11,7 @@
 
 .contacts--catalog {
   background-color: $secondary-color;
+  position: relative;
 }
 
 .contacts__title {
@@ -78,12 +79,28 @@
 
 @media (min-width: $dekstop-width) {
   .contacts__inner {
-    position: absolute;
     background-color: $background;
     padding: 66px 89px 51px 76px;
     top: 95px;
     left: 30px;
     column-gap: 75px;
+    max-width: 570px;
+  }
+
+  .contacts__container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .contacts {
+    padding: 95px 0 109px 0;
   }
 
   .contacts__location {

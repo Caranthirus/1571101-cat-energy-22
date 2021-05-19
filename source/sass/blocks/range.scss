@@ -1,0 +1,59 @@
+.range__button {
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $primary-font;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.range__button--before {
+  margin-right: 12px;
+}
+
+.range__button--after {
+  margin-left: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .range {
+    margin-top: 68px;
+    padding-bottom: 70px;
+  }
+
+  .range__button {
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px dotted rgba($text, 0.3);
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      border-style: solid;
+      outline: none;
+    }
+
+    &:active {
+      border-color: transparent;
+      outline: none;
+    }
+  }
+
+  .range__button--before {
+    margin-right: 24px;
+  }
+
+  .range__button--after {
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: $dekstop-width) {
+  .range {
+    margin-top: 94px;
+    padding-bottom: 0;
+  }
+}

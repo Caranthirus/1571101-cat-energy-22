@@ -1,6 +1,6 @@
 .example {
   background-color: $secondary-color;
-  padding: 29px 0 26px 0;
+  padding: 29px 0 36px 0;
   position: relative;
 }
 
@@ -72,27 +72,12 @@
   z-index: 1;
 }
 
-.progress__price {
-  text-align: center;
-  margin: 0;
-}
-
-.progress__price span {
-  font-family: $primary-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: $text;
-  text-transform: uppercase;
-}
-
 .example__image-wrapper {
   margin-bottom: 23px;
 }
 
 .example__evolution {
-  margin-top: 23px;
+  margin-top: 38px;
 }
 
 .example__picture {
@@ -115,61 +100,10 @@
   background-image: url("../../img/after-mobile-1.png");
 }
 
-.buttons-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.progress-bar {
-  width: 84px;
-}
-
-.range__button {
-  background-color: transparent;
-  border: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: $primary-font;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.range__button--before {
-  margin-right: 12px;
-}
-
-.range__button--after {
-  margin-left: 12px;
-}
-
-.progress-bar__track {
-  width: 100%;
-  height: 14px;
-  cursor: pointer;
-  background: $background;
-  border-radius: 6px;
-  border: 1px solid $range-color;
-  padding: 3px 6px;
-  position: relative;
-}
-
-.progress-bar__progress-togle {
-  height: 6px;
-  width: 35px;
-  border-radius: 6px;
-  background: $primary-color;
-  cursor: pointer;
-  position: absolute;
-}
-
 @media (min-width: $tablet-width) {
   .example {
     background-color: transparent;
-    // padding-top: 42px;
-    padding: 42px 0 0;
+    padding: 48px 0 0;
 
     &::after {
       content: "";
@@ -232,21 +166,6 @@
     max-width: 112px;
   }
 
-  .progress__price {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-  }
-
-  .progress__price span {
-    font-size: 20px;
-    line-height: 20px;
-
-    &:last-child {
-      margin: 9px 0 0 auto;
-    }
-  }
-
   .example__evolution {
     margin-top: 39px;
     position: relative;
@@ -291,53 +210,11 @@
       background-image: url("../../img/cat-skinny--tablet@2x.png");
     }
   }
-
-  .range {
-    margin-top: 68px;
-    padding-bottom: 70px;
-  }
-
-  .progress-bar {
-    width: 428px;
-  }
-
-  .range__button {
-    font-size: 20px;
-    line-height: 30px;
-    border-bottom: 1px dotted rgba($text, 0.3);
-    padding: 0;
-  }
-
-  .range__button--before {
-    margin-right: 24px;
-  }
-
-  .range__button--after {
-    margin-left: 24px;
-  }
-
-  .progress-bar__track {
-    height: 6px;
-    padding: 0;
-    background: $range;
-  }
-
-  .progress-bar__progress-togle {
-    height: 34px;
-    width: 34px;
-    border: 13px solid $background;
-    border-radius: 50%;
-    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
-    margin-top: -6px;
-    box-shadow: 0 0 0 1px $range-color;
-    top: -10px;
-    left: 198px;
-  }
 }
 
 @media (min-width: $dekstop-width) {
   .example {
-    padding-bottom: 75px;
+    padding-bottom: 61px;
     padding-top: 0;
   }
 
@@ -390,20 +267,11 @@
       position: absolute;
       width: 305px;
       height: calc(100% - 128px);
-      top: 203px;
+      top: 189px;
       left: 323px;
       z-index: -1;
       background-color: $cat-background--example;
     }
-  }
-
-  .range {
-    margin-top: 94px;
-    padding-bottom: 0;
-  }
-
-  .buttons-block {
-    padding-left: 35px;
   }
 
   .example__progress {
@@ -421,19 +289,5 @@
 
   .example__progress-item:last-child {
     margin-left: 21px;
-  }
-
-  .progress__price {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .progress__price span {
-    margin-right: 63px;
-    margin-left: 0;
-
-    &:last-child {
-      margin: 0;
-    }
   }
 }

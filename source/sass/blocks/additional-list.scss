@@ -18,7 +18,7 @@
   height: 14px;
   position: absolute;
   content: "";
-  background: url("../../img/icons/check.svg") no-repeat 0 0;
+  background: url("../../img/check.svg") no-repeat 0 0;
   left: -37px;
   top: 3px;
 }
@@ -51,7 +51,7 @@
   .additional-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 124px;
+    column-gap: 19px;
   }
 
   .additional-list__item {
@@ -75,7 +75,7 @@
 
 @media (min-width: $dekstop-width) {
   .additional-list {
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 74px;
   }
 }

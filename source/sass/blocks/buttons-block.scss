@@ -1,0 +1,11 @@
+.buttons-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: $dekstop-width) {
+  .buttons-block {
+    padding-left: 35px;
+  }
+}
