@@ -13,7 +13,6 @@ if (promo) {
 if (catalog) {
   catalog.classList.remove("catalog--nojs");
 }
-
 if (program) {
   program.classList.remove("program-selection--nojs");
 }

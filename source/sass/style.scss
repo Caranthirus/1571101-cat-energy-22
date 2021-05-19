@@ -1,11 +1,6 @@
-// Global
-
 @import "global/variables.scss";
 @import "global/global.scss";
 @import "global/fonts.scss";
-
-// Page + basic
-
 @import "blocks/page.scss";
 @import "blocks/title.scss";
 @import "blocks/button.scss";
@@ -13,14 +8,7 @@
 @import "blocks/container.scss";
 @import "blocks/logo.scss";
 @import "blocks/visually-hidden.scss";
-
-
-// Header
-
 @import "blocks/header.scss";
-
-// Main
-
 @import "blocks/promo.scss";
 @import "blocks/programs.scss";
 @import "blocks/work.scss";
@@ -30,22 +18,12 @@
 @import "blocks/progress-price.scss";
 @import "blocks/range.scss";
 @import "blocks/contacts.scss";
-
-//Footer
-
 @import "blocks/footer.scss";
 @import "blocks/social-list.scss";
-
-
-//Catalog
-
 @import "blocks/catalog.scss";
 @import "blocks/product.scss";
 @import "blocks/additional-products.scss";
 @import "blocks/add-products.scss";
-
-//Form
-
 @import "blocks/program-selection.scss";
 @import "blocks/form-area.scss";
 @import "blocks/form-control.scss";
