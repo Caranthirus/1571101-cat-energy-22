@@ -24,10 +24,19 @@
   display: none;
 }
 
+.header__title-logo {
+  margin-right: 6px;
+}
+
+.header__title-logo--nojs {
+  margin-right: 34px;
+}
+
 .header__burger {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 0;
 }
 
 .header__burger-icon--open {
@@ -221,6 +230,7 @@
 
   .header__wrapper {
     padding-top: 53px;
+    grid-template-columns: 611px 1fr;
   }
 
   .header__menu {

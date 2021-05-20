@@ -4,9 +4,11 @@ const header = document.querySelector(".header");
 const promo = document.querySelector(".promo");
 const catalog = document.querySelector(".catalog");
 const program = document.querySelector(".program-selection");
+const logo = document.querySelector(".header__title-logo");
 
 nav.classList.remove("header__wrapper--nojs");
 header.classList.remove("header--nojs");
+logo.classList.remove("header__title-logo--nojs");
 if (promo) {
   promo.classList.remove("promo--nojs");
 }

@@ -95,10 +95,6 @@
   row-gap: 13px;
 }
 
-.form-area__inner .form-control:last-child {
-  margin-bottom: 0;
-}
-
 .form-area__head {
   margin: 0 -20px 0 -20px;
   padding: 20px 20px 0 20px;
@@ -256,10 +252,12 @@
     grid-template-columns: 1fr 1fr;
     padding: 0;
     column-gap: 80px;
+    align-items: center;
   }
 
   .form-area__info--program {
     margin-top: 0;
+    padding-bottom: 30px;
   }
 
   .form-area__info--comment .form-area__textfield {
@@ -283,10 +281,6 @@
     align-items: center;
     column-gap: 78px;
     padding-right: 0;
-  }
-
-  .form-area__inner .form-control {
-    margin-bottom: 0;
   }
 
   .form-area__info--contacts {

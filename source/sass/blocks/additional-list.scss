@@ -3,7 +3,12 @@
   padding-left: 44px;
 }
 
-.additional-list__input + .program-list__label::before {
+.additional-list__label {
+  position: relative;
+  cursor: pointer;
+}
+
+.additional-list__input + .additional-list__label::before {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -13,7 +18,7 @@
   top: -4px;
 }
 
-.additional-list__input:checked + .program-list__label::after {
+.additional-list__input:checked + .additional-list__label::after {
   width: 18px;
   height: 14px;
   position: absolute;
@@ -23,28 +28,17 @@
   top: 3px;
 }
 
-.additional-list__input:not(:disabled) + .program-list__label:hover::before,
-.additional-list__input:not(:disabled):focus + .program-list__label::before {
+.additional-list__input:not(:disabled) + .additional-list__label:hover::before,
+.additional-list__input:not(:disabled):focus + .additional-list__label::before {
   border: 1px solid $hover-form;
 }
 
-.additional-list__input:disabled + .program-list__label {
+.additional-list__input:disabled + .additional-list__label {
   opacity: 0.3;
 }
 
-.additional-list__input:disabled + .program-list__label::before {
+.additional-list__input:disabled + .additional-list__label::before {
   border: 1px solid $hover-form;
-}
-
-.program-list__input:checked + .program-list__label::after {
-  position: absolute;
-  content: "";
-  width: 14px;
-  height: 14px;
-  background-color: $primary-color;
-  top: 5px;
-  left: -37px;
-  border-radius: 50%;
 }
 
 @media (min-width: $tablet-width) {
@@ -61,13 +55,13 @@
     padding-left: 59px;
   }
 
-  .additional-list__input + .program-list__label::before {
+  .additional-list__input + .additional-list__label::before {
     width: 40px;
     height: 40px;
     left: -58px;
   }
 
-  .additional-list__input:checked + .program-list__label::after {
+  .additional-list__input:checked + .additional-list__label::after {
     left: -46px;
     top: 8px;
   }
