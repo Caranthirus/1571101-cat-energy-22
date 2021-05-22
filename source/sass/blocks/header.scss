@@ -186,7 +186,6 @@
 
   .header__menu {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     font-weight: 400;
     font-size: 18px;
@@ -238,7 +237,7 @@
 
   .header__wrapper {
     padding-top: 53px;
-    grid-template-columns: 611px 1fr;
+    grid-template-columns: 681px 1fr;
   }
 
   .header__menu {
