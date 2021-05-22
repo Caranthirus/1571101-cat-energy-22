@@ -17,6 +17,17 @@
   padding-top: 5px;
 }
 
+.product__picture-link {
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
 .product__title {
   font-family: $primary-font;
   font-style: normal;
@@ -27,6 +38,19 @@
   color: $text-catalog;
   margin: 0 0 10px 0;
   max-width: calc(100% - 64px);
+}
+
+.product__title-link {
+  color: $text-catalog;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .product__property-cell {
